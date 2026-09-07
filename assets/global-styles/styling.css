@@ -1,0 +1,110 @@
+@import url("dark.css") (prefers-color-scheme: dark);
+@import url("light.css") (prefers-color-scheme: light);
+@font-face {
+    font-family: 'Ubuntu'; /* Name you'll use in CSS */
+    src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --header-size: 90px;
+    --nav-size: 30px;
+}
+
+body {
+    margin: 0px;
+
+    /* Webpage font */
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+header {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+}
+
+header .logo {
+    width: var(--header-size);
+    height: var(--header-size);
+}
+
+header .title {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26pt;
+    margin: auto 10px auto 10px;
+    height: var(--header-size);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: var(--nav-size);
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11pt;
+    box-shadow: #0003 0px 2px 2px 0px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.project-overview {
+    display: block;
+    max-width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.project-overview img {
+    height: 150px;
+    width: 150px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.project-overview a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color 180ms ease;
+}
+
+.project-overview a:focus {
+    border-width: 1px;
+    border-style: solid;
+}

@@ -1,0 +1,35 @@
+body {
+    background-color: #111017;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1924;
+}
+
+nav {
+    background-color: #111017;
+    color: #ccc;
+}
+
+nav a {
+    color: #eee;
+    background-color: #19123f;
+}
+
+main {
+    background-color: #1b1a2a;
+}
+
+.project-overview {
+    background-color: #111017;
+}
+
+.project-overview a {
+    background-color: #b65633;
+    color: #fff;
+}
+
+.project-overview a:hover {
+    background-color: rgb(91, 52, 30);
+}
