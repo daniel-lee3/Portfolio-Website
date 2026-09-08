@@ -3,6 +3,10 @@ body {
     color: #000;
 }
 
+.logo {
+    content: url("/assets/images/logo-light.png");
+}
+
 header {
     background-color: #dedbee;
 }
@@ -13,6 +17,11 @@ nav {
 }
 
 nav a {
+    color: #111;
+    background-color: #baacff;
+}
+
+nav button {
     color: #111;
     background-color: #baacff;
 }

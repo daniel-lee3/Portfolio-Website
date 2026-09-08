@@ -3,6 +3,10 @@ body {
     color: #fff;
 }
 
+.logo {
+    content: url("/assets/images/logo-dark.png");
+}
+
 header {
     background-color: #1a1924;
 }
@@ -13,6 +17,11 @@ nav {
 }
 
 nav a {
+    color: #eee;
+    background-color: #19123f;
+}
+
+nav button {
     color: #eee;
     background-color: #19123f;
 }

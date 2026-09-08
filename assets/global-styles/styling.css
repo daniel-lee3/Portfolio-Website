@@ -1,5 +1,6 @@
 @import url("dark.css") (prefers-color-scheme: dark);
 @import url("light.css") (prefers-color-scheme: light);
+
 @font-face {
     font-family: 'Ubuntu'; /* Name you'll use in CSS */
     src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
@@ -15,7 +16,8 @@
 
 :root {
     --header-size: 90px;
-    --nav-size: 30px;
+    --mobile-nav-size: 60px;
+    --desktop-nav-size: 40px;
 }
 
 body {
@@ -56,15 +58,27 @@ header .title {
 nav {
     display: flex;
     flex-direction: row;
-    height: var(--nav-size);
+    height: var(--desktop-nav-size);
     align-items: center;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 11pt;
+    font-size: 14pt;
     box-shadow: #0003 0px 2px 2px 0px;
     position: sticky;
     top: 0;
+}
+
+nav#mobile {
+    height: var(--mobile-nav-size);
+}
+
+nav#mobile .logo {
+    display: inline-block;
+    width: var(--mobile-nav-size);
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
 }
 
 nav a {
@@ -72,6 +86,20 @@ nav a {
     margin: 0px 10px;
     padding: 2px 10px;
     border-radius: 10px;
+}
+
+nav button {
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border: 0px;
+}
+
+nav button object {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }
 
 main {
@@ -107,4 +135,21 @@ main {
 .project-overview a:focus {
     border-width: 1px;
     border-style: solid;
+}
+
+nav#mobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: none;
+    }
+    nav#desktop {
+        display: none;
+    }
+    nav#mobile {
+        display: flex;
+
+    }
 }
