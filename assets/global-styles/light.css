@@ -1,44 +1,50 @@
-body {
-    background-color: rgb(247, 253, 255);
-    color: #000;
-}
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(247, 253, 255);
+        color: #000;
+    }
 
-.logo {
-    content: url("/assets/images/logo-light.png");
-}
+    .logo {
+        content: url("/assets/images/logo-light.png");
+    }
 
-header {
-    background-color: #dedbee;
-}
+    header {
+        background-color: #dedbee;
+    }
 
-nav {
-    background-color: #d2c9ff;
-    color: #444;
-}
+    nav {
+        background-color: #d2c9ff;
+        color: #444;
+    }
 
-nav a {
-    color: #111;
-    background-color: #baacff;
-}
+    nav a {
+        color: #111;
+        background-color: #baacff;
+    }
 
-nav button {
-    color: #111;
-    background-color: #baacff;
-}
+    nav button {
+        color: #111;
+        background-color: #baacff;
+    }
 
-main {
-    background-color: #f9f8ff;
-}
+    main {
+        background-color: #f9f8ff;
+    }
 
-.project-overview {
-    background-color: #eeebff;
-}
+    footer {
+        background-color: #dedbee;
+    }
 
-.project-overview a {
-    background-color: #ff9c79;
-    color: #000;
-}
+    .project-overview {
+        background-color: #eeebff;
+    }
 
-.project-overview a:hover {
-    background-color: #d69068;
+    .project-overview a {
+        background-color: #ff9c79;
+        color: #000;
+    }
+
+    .project-overview a:hover {
+        background-color: #d69068;
+    }
 }

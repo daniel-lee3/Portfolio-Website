@@ -1,28 +1,26 @@
-@import url("dark.css") (prefers-color-scheme: dark);
-@import url("light.css") (prefers-color-scheme: light);
-
 @font-face {
     font-family: 'Ubuntu'; /* Name you'll use in CSS */
     src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Ubuntu';
     src: url('/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 :root {
     --header-size: 90px;
     --mobile-nav-size: 60px;
     --desktop-nav-size: 40px;
+    --max-width-size: 900px;
 }
 
 body {
-    margin: 0px;
-
     /* Webpage font */
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -30,12 +28,20 @@ body {
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
+    
+    max-width: var(--max-width-size);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 header {
     display: flex;
     margin: 0px;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 header .logo {
@@ -56,6 +62,7 @@ header .title {
 }
 
 nav {
+    z-index: 1;
     display: flex;
     flex-direction: row;
     height: var(--desktop-nav-size);
@@ -64,13 +71,17 @@ nav {
     font-weight: 400;
     font-style: normal;
     font-size: 14pt;
-    box-shadow: #0003 0px 2px 2px 0px;
     position: sticky;
     top: 0;
 }
 
 nav#mobile {
     height: var(--mobile-nav-size);
+    padding: 10px;
+}
+
+nav#mobile span {
+    margin-left: auto;
 }
 
 nav#mobile .logo {
@@ -137,6 +148,19 @@ main {
     border-style: solid;
 }
 
+.highlight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section {
+    display: inline;
+    width: fit-content;
+    position: relative;
+}
+
 nav#mobile {
     display: none;
 }
@@ -152,4 +176,19 @@ nav#mobile {
         display: flex;
 
     }
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+footer {
+    padding: 20px;
+}
+
+body::after {
+    /*content: "\00a9 2026 Daniel Lee";*/
 }

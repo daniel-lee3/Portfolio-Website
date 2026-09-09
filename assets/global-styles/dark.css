@@ -1,44 +1,54 @@
-body {
-    background-color: #111017;
-    color: #fff;
-}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111017;
+        color: #fff;
+    }
 
-.logo {
-    content: url("/assets/images/logo-dark.png");
-}
+    .logo {
+        content: url("/assets/images/logo-dark.png");
+    }
 
-header {
-    background-color: #1a1924;
-}
+    header {
+        background-color: #2d2b45;
+    }
 
-nav {
-    background-color: #111017;
-    color: #ccc;
-}
+    nav {
+        background-color: #111017;
+        color: #ccc;
+    }
 
-nav a {
-    color: #eee;
-    background-color: #19123f;
-}
+    a {
+        color: #eee;
+    }
 
-nav button {
-    color: #eee;
-    background-color: #19123f;
-}
+    nav a {
+        color: #eee;
+        background-color: #19123f;
+    }
 
-main {
-    background-color: #1b1a2a;
-}
+    nav button {
+        color: #eee;
+        background-color: #19123f;
+    }
 
-.project-overview {
-    background-color: #111017;
-}
+    main {
+        background-color: #1b1a2a;
+    }
 
-.project-overview a {
-    background-color: #b65633;
-    color: #fff;
-}
+    footer {
+        background-color: #2d2b45;
+    }
 
-.project-overview a:hover {
-    background-color: rgb(91, 52, 30);
+    .project-overview {
+        background-color: #111017;
+    }
+
+    .project-overview a {
+        background-color: #b65633;
+        color: #fff;
+    }
+
+    .project-overview a:hover {
+        background-color: rgb(91, 52, 30);
+    }
 }
