@@ -1,0 +1,20 @@
+footer {
+    padding: 20px;
+}
+
+footer a {
+    font-size: 26pt;
+    text-decoration: none;
+}
+
+@media (prefers-color-scheme: light) {
+    footer {
+        background-color: #e6e1ff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: #2d2b45;
+    }
+}

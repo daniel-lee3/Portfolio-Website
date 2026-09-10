@@ -1,0 +1,63 @@
+.contact-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-list form {
+    width: 100%;
+}
+
+.contact-list label {
+    font-size: 14pt;
+}
+
+.contact-list input, .contact-list textarea {
+    resize: none;
+    border: 0px;
+    border-radius: 10px;
+    width: calc(100% - 10px);
+    padding: 5px;
+    margin: 5px 0px 20px 0px;
+    font: inherit;
+    color: inherit;
+}
+
+.contact-list input[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    transition: scale 200ms ease;
+}
+
+.contact-list input[type="submit"]:hover {
+    scale: 1.04;
+}
+
+.contact-list input[type="submit"]:active {
+    scale: 0.9;
+}
+
+.contact-list a {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media (prefers-color-scheme: light) {
+    .contact-list input, .contact-list textarea {
+        background-color: #d7d0ff;
+    }
+    .contact-list input[type="submit"], .contact-list a {
+        background-color: #ff9c79;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .contact-list input, .contact-list textarea {
+        background-color: #272543;
+    }
+    .contact-list input[type="submit"], .contact-list a {
+        background-color: #b65633;
+    }
+}

@@ -5,9 +5,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="The portfolio of Daniel Lee, a Nelson Tasman based developer in New Zealand, designing for the web and creating software using python and Node JS">
-        <title>Daniel Lee - Portfolio</title>
-        <link rel="stylesheet" href="/assets/global-styles/light.css">
-        <link rel="stylesheet" href="/assets/global-styles/dark.css">
+        <title>Daniel Lee</title>
+        <!-- FontAwesome Library -->
+        <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="/assets/fontawesome/css/brands.min.css">
+        <link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css">
+        <!-- Component CSS -->
+        <link rel="stylesheet" href="/components/header/header.css">
+        <link rel="stylesheet" href="/components/navigation/navigation.css">
+        <link rel="stylesheet" href="/components/footer/footer.css">
+        <link rel="stylesheet" href="/components/projects/projects.css">
+        <!-- Global Styling -->
         <link rel="stylesheet" href="/assets/global-styles/styling.css">
     </head>
     <body>
@@ -15,56 +23,46 @@
             <img class="logo" alt="Webpage Logo"/>
             <span class="title">Daniel Lee</span>
         </header>
-        <nav id="mobile">
-            <button class="burger" aria-label="Open menu">
-                <svg viewBox="0 -1 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-                        <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-210.000000, -887.000000)" fill="currentColor">
-                            <path d="M229,895 L211,895 C210.448,895 210,895.448 210,896 C210,896.553 210.448,897 211,897 L229,897 C229.552,897 230,896.553 230,896 C230,895.448 229.552,895 229,895 L229,895 Z M229,903 L211,903 C210.448,903 210,903.448 210,904 C210,904.553 210.448,905 211,905 L229,905 C229.552,905 230,904.553 230,904 C230,903.448 229.552,903 229,903 L229,903 Z M211,889 L229,889 C229.552,889 230,888.553 230,888 C230,887.448 229.552,887 229,887 L211,887 C210.448,887 210,887.448 210,888 C210,888.553 210.448,889 211,889 L211,889 Z" id="hamburger" sketch:type="MSShapeGroup"></path>
-                        </g>
-                    </g>
-                </svg>
-            </button>
+        <nav class="mobile">
+            <button class="burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
             <span class="title">Daniel Lee</span>
-            <span><img class="logo" alt="Webpage Logo" src="/assets/images/logo.jpg"/></span>
+            <span><img class="logo" alt="Webpage Logo" src=""/></span>
         </nav>
-        <nav id="desktop">
-            <a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="#">Skills</a> | <a href="#">Contact</a>
+        <nav class="desktop">
+            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact</a>
         </nav>
         <main>
-            <h1>Home Page</h1>
             <p>
                 I am Daniel, a Nelson/Tasman-based developer from Richmond, I have been
-                writing code in my own time since 2017, and working towards a BIT since
-                the beginning of 2026. On here you can find all my projects that I have
-                made since starting my more professional studies and beyond.
+                writing code in my own time since 2017, and working towards a Bachelors
+                in Information Technology since the beginning of 2026. On here you can
+                find all my projects that I have made since starting my more professional
+                studies and beyond.
             </p>
-            <div class="highlight">
-                <section>
+            <div class="project-list">
+                <section class="project-highlight">
                     <h2>First Project</h2>
                     <div class="project-overview">
                         <img src="/assets/images/study-tracker.webp" alt="Terminal Running Study Tracker" />
                         <h2>Study Tracker</h2>
-                        <p>A study tracker made with NodeJS for my first assignment</p>
-                        <a href="#">Learn More...</a>
+                        <p>A study tracker made with Node</p>
+                        <a href="https://github.com/daniel-lee3/sdv503-a2-study-tracker-13536795" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </section>
-                <section>
-                    <h2>Latest Project</h2>
+                <section class="project-highlight">
+                    <h2>Newest Project</h2>
                     <div class="project-overview">
                         <img src="/assets/images/portfolio.webp" alt="Screenshot of this website" />
                         <h2>Portfolio Website</h2>
-                        <p>A portfolio website for myself to display my projects and skills</p>
-                        <a href="#">Learn More...</a>
+                        <p>A website made with HTML/CSS</p>
+                        <a href="https://github.com/daniel-lee3/Portfolio-Website/" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </section>
             </div>
         </main>
         <footer>
-            <a href="https://www.linkedin.com/in/daniel-lee-90303b360/">LinkedIn</a>
-            <br />
-            <a href="https://github.com/daniel-lee3">GitHub</a>
-            <br />
+            <a href="https://www.linkedin.com/in/daniel-lee-90303b360/" class="fa-brands fa-square-linkedin" target="_blank"></a>
+            <a href="https://github.com/daniel-lee3" class="fa-brands fa-square-github" target="_blank"></a>
         </footer>
     </body>
 </html>

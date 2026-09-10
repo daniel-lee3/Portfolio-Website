@@ -1,0 +1,115 @@
+:root {
+    --mobile-nav-size: 60px;
+    --desktop-nav-size: 40px;
+}
+
+nav {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    height: var(--desktop-nav-size);
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14pt;
+    position: sticky;
+    top: 0;
+}
+
+nav.mobile {
+    height: var(--mobile-nav-size);
+    padding: 10px;
+}
+
+nav.mobile span {
+    margin-left: auto;
+}
+
+nav.mobile .logo {
+    display: inline-block;
+    width: var(--mobile-nav-size);
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+nav a {
+    margin: 0px 10px;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+nav button {
+    font-size: 14pt;
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    border: 0px;
+}
+
+nav button object {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+
+nav.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        display: flex;
+
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    nav {
+        background-color: #d2c9ff;
+        color: #444;
+    }
+
+    nav a {
+        color: #111;
+        background-color: #baacff;
+    }
+
+    nav a:hover {
+        background-color: #dcd5ff;
+    }
+
+    nav a:active {
+        background-color: #917bfe;
+    }
+
+    nav button {
+        color: #111;
+        background-color: #baacff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    nav a {
+        color: #eee;
+        background-color: #19123f;
+    }
+
+    nav a:hover {
+        background-color: #21194b;
+    }
+
+    nav a:active {
+        background-color: #080518;
+    }
+
+    nav button {
+        color: #eee;
+        background-color: #19123f;
+    }
+}

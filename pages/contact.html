@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="/components/header/header.css">
         <link rel="stylesheet" href="/components/navigation/navigation.css">
         <link rel="stylesheet" href="/components/footer/footer.css">
-        <link rel="stylesheet" href="/components/projects/projects.css">
+        <link rel="stylesheet" href="/components/contact/contact.css">
         <!-- Global Styling -->
         <link rel="stylesheet" href="/assets/global-styles/styling.css">
     </head>
@@ -30,26 +30,17 @@
             <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact</a>
         </nav>
         <main>
-            <p>All projects are in descending order from the date it was started</p>
-            <div class="project-list">
-                <div class="project-overview">
-                    <img src="/assets/images/portfolio.webp" alt="Screenshot of this website" />
-                    <h2>Portfolio Website</h2>
-                    <p>A portfolio website for myself to display my projects and skills</p>
-                    <a href="https://github.com/daniel-lee3/portfolio-website/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="project-overview">
-                    <img src="/assets/images/hut-booking.webp" alt="Terminal Running Hut Booking" />
-                    <h2>Hut Booking</h2>
-                    <p>A hut booking application made with TypeScript</p>
-                    <a href="https://github.com/daniel-lee3/sdv503-a3-hut-booking" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="project-overview">
-                    <img src="/assets/images/study-tracker.webp" alt="Terminal Running Study Tracker" />
-                    <h2>Study Tracker</h2>
-                    <p>A study tracker made with NodeJS</p>
-                    <a href="https://github.com/daniel-lee3/sdv503-a2-study-tracker-13536795" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
+            <div class="contact-list">
+                <a href="mailto:daniellee140207@gmail.com">daniellee140207@gmail.com <i class="fa-solid fa-envelope"></i></a>
+                <form>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="example@mail.com" autocomplete="address-level1" required />
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" name="subject" placeholder="Inquiry" required />
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" placeholder="Message" rows="5" required></textarea>
+                    <input type="submit">
+                </form>
             </div>
         </main>
         <footer>

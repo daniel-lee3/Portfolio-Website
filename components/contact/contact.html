@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- FontAwesome Library -->
+        <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="/assets/fontawesome/css/brands.min.css">
+        <link rel="stylesheet" href="/assets/fontawesome/css/solid.min.css">
+        <!-- Component CSS -->
+        <link rel="stylesheet" href="./contact.css">
+        <!-- Global Styling -->
+        <link rel="stylesheet" href="/assets/global-styles/styling.css">
+    </head>
+    <body>
+        <main>
+            <div class="contact-list">
+                <a href="mailto:daniellee140207@gmail.com">daniellee140207@gmail.com <i class="fa-solid fa-envelope"></i></a>
+                <form>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="example@mail.com" autocomplete="address-level1" required />
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" name="subject" placeholder="Inquiry" required />
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" placeholder="Message" rows="5" required></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

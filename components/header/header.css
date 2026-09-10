@@ -1,0 +1,46 @@
+:root {
+    --header-size: 90px;
+}
+
+header {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo {
+    width: var(--header-size);
+    height: var(--header-size);
+}
+
+header .title {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 26pt;
+    margin: auto 10px auto 10px;
+    height: var(--header-size);
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    header {
+        background-color: #e6e1ff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #2d2b45;
+    }
+}
